@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+
+
+</head>
+
+<body>
+    <aside class="profile-card">
+        <img src="images/my-avatar.png" alt="" width="150" height="150" loading="lazy">
+        <div class="profile-details">
+            <h1>GOVARDAN N A</h1>
+            <h2 id="role">Web Developer</h2>
+            <div class="h-line">
+            </div>
+            <ul class="contact-list">
+                <li>
+                    <div class="icon-box">
+                        <a href="https://api.whatsapp.com/send?phone=919003980804" target="_blank"><i
+                                class='bx bxl-whatsapp'></i></a>
+                    </div>
+                    <div class="icon-box">
+                        <a href="mailto:e1215024govardancse@gmail" target="_blank"><i class='bx bx-envelope'></i></a>
+                    </div>
+                    <div class="icon-box">
+                        <a href="https://www.linkedin.com/in/govardanna/" target="_blank"><i
+                                class='bx bxl-linkedin'></i></a>
+                    </div>
+                    <div class="icon-box">
+                        <a href="https://github.com/GOVARDAN-N-A" target="_blank"><i class='bx bxl-github'></i></a>
+                    </div>
+                </li>
+            </ul>
+            <section class="language">
+
+
+                <ul class="language-list content-card">
+
+                    <li class="language-item">
+
+                        <div class="title-wrapper">
+                            <h5 class="h5">Sowrastra</h5>
+                            <data value="95">95%</data>
+                        </div>
+
+                        <div class="language-progress-bg">
+                            <div class="language-progress-fill" style="width: 95%;"></div>
+                        </div>
+
+                    </li>
+                    <li class="language-item">
+                        <div class="title-wrapper">
+                            <h5 class="h5">Tamil</h5>
+                            <data value="90">90%</data>
+                        </div>
+                        <div class="language-progress-bg">
+                            <div class="language-progress-fill" style="width: 90%;"></div>
+                        </div>
+                    </li>
+                    <li class="language-item">
+                        <div class="title-wrapper">
+                            <h5 class="h5">English</h5>
+                            <data value="80">80%</data>
+                        </div>
+                        <div class="language-progress-bg">
+                            <div class="language-progress-fill" style="width: 80%;"></div>
+                        </div>
+                    </li>
+                    <li class="language-item">
+                        <div class="title-wrapper">
+                            <h5 class="h5">Hindi</h5>
+                            <data value="50">50%</data>
+                        </div>
+                        <div class="language-progress-bg">
+                            <div class="language-progress-fill" style="width: 50%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </aside>
+    <div class="main-content">
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <button onclick="show_content('about')">About</button>
+                    <!-- <a href="#" class="nav-link">About</a> -->
+                </li>
+                <li class="nav-item">
+                    <button onclick="show_content('resume')">Resume</button>
+
+                    <!-- <a href="#" class="nav-link">Resume</a> -->
+                </li>
+                <li class="nav-item">
+                    <button onclick="show_content('portfolio')">Portfolio</button>
+
+                    <!-- <a href="#" class="nav-link">Portfolio</a> -->
+                </li>
+                <li class="nav-item">
+                    <button onclick="show_content('contact')">Contact</button>
+
+                    <!-- <a href="#" class="nav-link">Contact</a> -->
+                </li>
+            </ul>
+        </nav>
+
+        <article class="about_section" id="about">
+            <header>
+                <h2 class="section-title">About Me</h2>
+                <div class="btm-line"></div>
+            </header>
+            <section class="about-content">
+                <p>
+                    Enthusiastic engineer with a strong foundation in HTML, CSS, JavaScript, and Python. Currently
+                    enrolled at M.I.E.T Engineering College, dedicated to refining my skills and delving into emerging
+                    technologies.
+                </p>
+            </section>
+            <section class="Current-pursuits">
+                <h2>Current Pursuits</h2>
+                <div class="btm-line"></div>
+                <ul>
+                    <li class="Current-pursuits-item">
+                        <div class="title">
+                            <img src="images/web-dev.svg" alt="" loading="lazy">
+                            <h3>Web Developer</h3>
+                        </div>
+                        <p>High-quality development of sites at the professional level.</p>
+                    </li>
+                    <li class="Current-pursuits-item">
+                        <div class="title">
+                            <img src="images/python-dev.png" alt="" width="38" loading="lazy">
+                            <h3>Python Programmer</h3>
+                        </div>
+                        <p>Delivering high-caliber Python programming for diverse applications and projects.</p>
+                    </li>
+                    <li class="Current-pursuits-item">
+                        <div class="title">
+                            <img src="images/ml.png" alt="" width="38" loading="lazy">
+                            <h3>Machine Learning</h3>
+                        </div>
+                        <p>Exploring the basics of machine learning to create simple yet effective solutions.</p>
+                    </li>
+                    <li class="Current-pursuits-item">
+                        <div class="title">
+                            <img src="images/data-science.png" alt="" width="38" loading="lazy">
+                            <h3>Data Science</h3>
+                        </div>
+                        <p>Analyzing and interpreting complex datasets using advanced data science methodologies for
+                            informed decision-making.</p>
+                    </li>
+                </ul>
+            </section>
+        </article>
+        <article class="resume_section" id="resume">
+            <header>
+                <h2 class="section-title">My Resume</h2>
+                <div class="btm-line"></div>
+            </header>
+            <div class="res-title" style="animation: revealFromLeft 0.5s 0s ease both 1;">
+                <i class='bx bx-book-reader'></i>
+                <h2>Education</h2>
+            </div>
+
+            <section class="block-content t-block-teal l-block-spacing">
+                <div class="l-contained">
+
+                    <ul class="timeline-list">
+                        <li>
+                            <div class="content">
+                                <h3>SSLC</h3>
+                                <h4>2018 - 2018</h4>
+                                <p>
+                                    Completed secondary education, demonstrating strong academic performance and a solid
+                                    foundation in various subjects.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content">
+                                <h3>Pre University</h3>
+                                <h4>2019 - 2021</h4>
+                                <p>
+                                    Excelled in higher secondary education, showcasing advanced knowledge in Physics,
+                                    Chemistry and Computer Science
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content">
+                                <h3>University</h3>
+                                <h4>2021 - Present</h4>
+                                <p>
+                                    Currently pursuing Computer Science and Engineering at M.I.E.T Engineering College.
+                                    Demonstrating a keen interest in Web Development, Machine Learning, Data Science,
+                                    Python programming.
+                                </p>
+                            </div>
+                        </li>
+
+
+
+
+            </section>
+            <section class="internship">
+                <div class="res-title" style="animation: revealFromLeft 0.5s 4s ease both 1;">
+                    <i class='bx bx-briefcase'></i>
+                    <h2>Internship</h2>
+                </div>
+                <div class="progress">
+                    <img src="images/progress.gif" alt="">
+                </div>
+            </section>
+
+            <section class="events">
+                <div class="res-title" style="animation: revealFromLeft 0.5s 5s ease both 1;">
+                    <i class='bx bx-calendar-event'></i>
+                    <h2> Extra Activities</h2>
+                </div>
+                <div class="achievement-timeline">
+                    <div class="achievement-item">
+                        <div class="achievement-icon">
+                            <i class='bx bxl-java' style="font-weight: 900;"></i>
+                        </div>
+                        <div class="achievement-details">
+                            <h4 class="achievement-title">Workshops</h4>
+                            <p>Completed <span style="color: #ffbb5c; font-weight: 700;">OOPs through Java</span>
+                                Workshop,
+                            <address><a href="https://maps.app.goo.gl/pk1BVtUx9KoYdrgM8" target="_blank">Sudarshan
+                                    Engineering College.</a></address>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-icon">
+                            <i class='bx bx-data'></i>
+                        </div>
+                        <div class="achievement-details">
+                            <h4 class="achievement-title">Value Added Courses</h4>
+                            <p>Completed Value Added Course in <span style="color: #ffbb5c; font-weight: 700;">RDBMS
+                                    using MySQL</span>,
+                            <address><a href="https://maps.app.goo.gl/5DRevri6TiSWoRG76" target="_blank"> M.I.E.T.
+                                    Engineering College.</a></address>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-icon">
+                            <i class='bx bxl-python'></i>
+                        </div>
+                        <div class="achievement-details">
+                            <h4 class="achievement-title">Certifications</h4>
+                            <p>Certification in <span style="color: #ffbb5c; font-weight: 700;">C and Advance
+                                    Python</span>,
+                            <address><a href="https://maps.app.goo.gl/XXufD4cBGLn1ZVbb7" target="_blank">T4TEQ Software
+                                    Solutions.</a></address>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="certificates">
+                <div class="res-title" style="animation: revealFromLeft 0.5s 7.5s ease both 1;">
+                    <i class='bx bx-calendar-event'></i>
+                    <h2>License & Certificates</h2>
+                </div>
+                <div class="certificate-images">
+                    <ul>
+                        <li>
+                            <img src="images/oops.jpg" alt="OOPs">
+                            <div class="eye-icon">&#128065;</div>
+                            <div class="popup">
+                                <span class="close-button" onclick="closePopup()">&times;</span>
+                                <img src="images/oops.jpg" alt="OOPs">
+                            </div>
+                        </li>
+                        <!-- Repeat the same structure for other images -->
+                        <li>
+                            <img src="images/mysql.jpg" alt="MySQL">
+                            <div class="eye-icon">&#128065;</div>
+                            <div class="popup">
+                                <span class="close-button" onclick="closePopup()">&times;</span>
+                                <img src="images/mysql.jpg" alt="MySQL">
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/ms-365-adv.png" alt="MS-365">
+                            <div class="eye-icon">&#128065;</div>
+                            <div class="popup">
+                                <span class="close-button" onclick="closePopup()">&times;</span>
+                                <img src="images/ms-365-adv.png" alt="MS-365">
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/python-2.png" alt="Python">
+                            <div class="eye-icon">&#128065;</div>
+                            <div class="popup">
+                                <span class="close-button" onclick="closePopup()">&times;</span>
+                                <img src="images/python-2.png" alt="Python">
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/Responsive_web design.jpg" alt="Responsive Web">
+                            <div class="eye-icon">&#128065;</div>
+                            <div class="popup">
+                                <span class="close-button" onclick="closePopup()">&times;</span>
+                                <img src="images/Responsive_web design.jpg" alt="Responsive Web">
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/machine_learning.png" alt="Machine learning">
+                            <div class="eye-icon">&#128065;</div>
+                            <div class="popup">
+                                <span class="close-button" onclick="closePopup()">&times;</span>
+                                <img src="images/machine_learning.png" alt="Machine learning">
+                            </div>
+                        </li>
+                </ul>
+                </div>
+            </section>
+            <section class="myskills">
+                
+            </section>
+        </article>
+
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
