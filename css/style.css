@@ -446,7 +446,8 @@ header {
 }
 
 .t-block-teal h2 {
-    color: bisque;
+    color:beige;
+    margin-bottom: 10px;
 }
 
 .t-block-teal h3 {
@@ -642,6 +643,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: revealFromLeft 0.5s 8s ease both 1;
 }
 
 .certificate-images ul {
@@ -736,6 +738,54 @@ header {
     color: #ff0000;
     z-index: 3; 
 }
+
+
+.skills-title { margin-bottom: 20px; }
+
+.skills-list {
+    padding: 20px;
+    width: 80%;
+    margin: 20px 100px;
+    background-color: #333;
+    border: 1px solid #ffffff27; 
+    border-radius: 1rem;
+    animation: revealFromLeft 0.5s 9.5s ease both 1;
+
+}
+
+.skills-item:not(:last-child) { margin-bottom: 15px; }
+
+.skill .title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
+.title-wrapper .h5 {
+    color: bisque;
+}
+.title-wrapper data {
+  color: #ffe4c4;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.skill-progress-bg {
+  background: var(--jet);
+  width: 100%;
+  height: 8px;
+  border-radius: 10px;
+}
+
+.skill-progress-fill {
+  background: var(--text-gradient-yellow);
+  height: 100%;
+  border-radius: inherit;
+}
+
+
+
 /* .res-title-2 img{
     background-color: #2b2b2c;
     padding: 0.5rem;
