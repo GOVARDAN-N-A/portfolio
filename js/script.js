@@ -82,3 +82,52 @@ const eyeIcons = document.querySelectorAll('.eye-icon');
             popup.style.display = 'none';
         });
     }
+
+
+function sendEmail() {
+  Email.send({
+    Host: "smtp.gmail.com",
+    Username: "e1215024govardan.n.a.cse@gmail.com",
+    Password: "mpceevmldcvdsxcg",
+    To: "e1215024govardancse@gmail.com",
+    From: document.getElementById("email").value,
+    Subject: "New Contact Form Enquiry",
+    Body: "Name: " + document.getElementById("name").value +
+      "<br> Email: " + document.getElementById("email").value +
+      "<br> Message: " + document.getElementById("message").value
+  }).then(
+    message => {
+      // const popup = document.getElementById("popup");
+      // popup.style.display = "block";
+      // Reset the form
+      resetForm();
+    }
+  );
+}
+
+function openpopup(){
+  // Show the popup
+  const popup = document.getElementById("popup");
+  popup.style.display = "block";
+}
+
+function closePopup() {
+  // Hide the popup
+  const popup = document.getElementById("popup");
+  popup.style.display = "none";
+}
+
+function resetForm() {
+  // Reset the form fields
+  document.getElementById("name").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("message").value = "";
+}
+    
+
+
+      // const allValid = Array.from(inputs).every(i => i.checkValidity() && i.value.trim() !== '');
+      // submitButton.classList.toggle('active', allValid);
+      // submitButton.disabled = !allValid;
+      // submitButton.style.cursor = allValid ? 'pointer' : 'not-allowed';
+    
