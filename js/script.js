@@ -35,37 +35,45 @@ document.addEventListener('DOMContentLoaded',function(event){
   });
 
   function show_content(param) {
-    if (param == "about") {
-        document.getElementById("about").style.display = "block";
-        document.getElementById("resume").style.display = "none";
-        document.getElementById("project").style.display = "none";
-        document.getElementById("contact").style.display = "none";
-    } else if (param == "resume") {
-        document.getElementById("about").style.display = "none";
-        document.getElementById("resume").style.display = "block";
-        document.getElementById("project").style.display = "none";
-        document.getElementById("contact").style.display = "none";
-    } else if (param == "portfolio") {
-        document.getElementById("about").style.display = "none";
-        document.getElementById("resume").style.display = "none";
-        document.getElementById("project").style.display = "block";
-        document.getElementById("contact").style.display = "none";
-    } else if (param == "contact") {
-        document.getElementById("about").style.display = "none";
-        document.getElementById("resume").style.display = "none";
-        document.getElementById("project").style.display = "none";
-        document.getElementById("contact").style.display = "block";
-    }
-    var allArticles = document.querySelectorAll('.main-content article');
-    allArticles.forEach(function (article) {
-        article.classList.remove('show');
-    });
 
-    // Show the selected article
-    var selectedArticle = document.getElementById(param);
-    if (selectedArticle) {
-        selectedArticle.classList.add('show');
-    }
+    const sections = ["about", "resume", "portfolio", "contact"];
+
+for (const section of sections) {
+    const displayValue = section === param ? "block" : "none";
+    document.getElementById(section).style.display = displayValue;
+}
+
+    // if (param == "about") {
+    //     document.getElementById("about").style.display = "block";
+    //     document.getElementById("resume").style.display = "none";
+    //     document.getElementById("portfolio").style.display = "none";
+    //     document.getElementById("contact").style.display = "none";
+    // } else if (param == "resume") {
+    //     document.getElementById("about").style.display = "none";
+    //     document.getElementById("resume").style.display = "block";
+    //     document.getElementById("portfolio").style.display = "none";
+    //     document.getElementById("contact").style.display = "none";
+    // } else if (param == "portfolio") {
+    //     document.getElementById("about").style.display = "none";
+    //     document.getElementById("resume").style.display = "none";
+    //     document.getElementById("portfolio").style.display = "block";
+    //     document.getElementById("contact").style.display = "none";
+    // } else if (param == "contact") {
+    //     document.getElementById("about").style.display = "none";
+    //     document.getElementById("resume").style.display = "none";
+    //     document.getElementById("portfolio").style.display = "none";
+    //     document.getElementById("contact").style.display = "block";
+    // }
+    // var allArticles = document.querySelectorAll('.main-content article');
+    // allArticles.forEach(function (article) {
+    //     article.classList.remove('show');
+    // });
+
+    // // Show the selected article
+    // var selectedArticle = document.getElementById(param);
+    // if (selectedArticle) {
+    //     selectedArticle.classList.add('show');
+    // }
 }
 
 const eyeIcons = document.querySelectorAll('.eye-icon');
@@ -83,6 +91,12 @@ const eyeIcons = document.querySelectorAll('.eye-icon');
         });
     }
 
+    function adjustFontSize(){
+      const emailInput = document.getElementById('email')
+      const emailWidth = emailInput.offsetWidth
+      emailInput.style.fontSize = `${emailWidth / 21}px`
+
+    }
 
 function sendEmail() {
   Email.send({

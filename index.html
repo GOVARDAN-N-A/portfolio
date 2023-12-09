@@ -103,7 +103,7 @@
                     <!-- <a href="#" class="nav-link">Resume</a> -->
                 </li>
                 <li class="nav-item">
-                    <button onclick="show_content('portfolio')">project</button>
+                    <button onclick="show_content('portfolio')">Portfolio</button>
 
                     <!-- <a href="#" class="nav-link">Portfolio</a> -->
                 </li>
@@ -133,7 +133,7 @@
                 <ul>
                     <li class="Current-pursuits-item">
                         <div class="title">
-                            <img src="images/web-dev.svg" alt="" loading="lazy">
+                            <img src="images/web-dev.svg" alt="" loading="lazy" width="38">
                             <h3>Web Developer</h3>
                         </div>
                         <p>High-quality development of sites at the professional level.</p>
@@ -339,7 +339,7 @@
                     <i class='bx bx-certification'></i>
                     <h2>License & Certificates</h2>
                 </div>
-                <div class="certificate-images">
+                <!-- <div class="certificate-images">
                     <ul>
                         <li>
                             <a href="images/oops.jpg" target="_blank">
@@ -384,29 +384,88 @@
 
                         </li>
                     </ul>
+                </div> -->
+
+                <div class="certificate_images">
+                    <a href="images/oops.jpg" target="_blank">
+                        <img src="images/oops.jpg" alt="OOPs" width="250" height="180">
+                        <!-- <div class="eye-icon">&#128065;</div> -->
+                    </a>
+                    <a href="images/mysql.jpg" target="_blank">
+                        <img src="images/mysql.jpg" alt="MySQL" width="250" height="180">
+                        <!-- <div class="eye-icon">&#128065;</div> -->
+                    </a>
+                    <a href="images/ms-365-adv.png" target="_blank">
+                        <img src="images/ms-365-adv.png" alt="MS-365" width="250" height="180">
+                        <!-- <div class="eye-icon">&#128065;</div> -->
+                    </a>
+                    <a href="images/python-2.png" target="_blank">
+                        <img src="images/python-2.png" alt="Python" width="250" height="180">
+                        <!-- <div class="eye-icon">&#128065;</div> -->
+                    </a>
+                    <a href="images/Responsive_web design.jpg" target="_blank">
+                        <img src="images/Responsive_web design.jpg" alt="Responsive Web" width="250" height="180">
+                        <!-- <div class="eye-icon">&#128065;</div> -->
+                    </a>
+                    <a href="images/machine_learning.png" target="_blank">
+                        <img src="images/machine_learning.png" alt="Machine learning" width="250" height="180">
+                        <!-- <div class="eye-icon">&#128065;</div> -->
+                    </a>
                 </div>
             </section>
 
         </article>
 
-        <article class="project_section" id="project">
+        <article class="portfolio_section" id="portfolio">
             <header>
-                <h2 class="section-title">My Projects</h2>
+                <h2 class="section-title">My Portfolio</h2>
                 <div class="btm-line"></div>
             </header>
-            <div class="project_filter">
-                <ul>
-                    <li>All</li>
-                    <li>Python</li>
-                    <li>Web Development</li>
-                    <li>Ms Office</li>
-                </ul>
+            <section class="projects">
+            <div class="project-title" style="animation: revealFromLeft 0.5s 0s ease both 1;">
+                <i class='bx bx-expand-horizontal'></i>
+                <h2>Project</h2>
             </div>
-            <div class="project_container">
-                <div class="project_item">
-
+                <div class="project_filter">
+                    <ul>
+                        <li><button>All</button></li>
+                        <li><button>Python</button></li>
+                        <li><button>Web Development</button></li>
+                        <li><button>Ms Office</button></li>
+                    </ul>
                 </div>
-            </div>
+                <div class="project_container">
+                    <div class="project_item">
+                        <div class="project_img">
+                            <img src="images/Financial_dashboard.png" alt="Financial_dashboard" width="250" height="180">
+                            <img src="images/Ecommerce_Django.png" alt="Ecommerce_Django" width="250" height="180">
+                            <img src="images/GPA_CGPA_Calculator.png" alt="GPA_CGPA_Calculator" width="250" height="180">
+                            <img src="images/online_tutorial.png" alt="online_tutorial" width="250" height="180">
+                            <img src="images/loading.gif" alt="loading.." width="250" height="180">
+                            <img src="images/loading.gif" alt="loading.." width="250" height="180">
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="presentations">
+                <div class="project-title" style="animation: revealFromLeft 0.5s 0s ease both 1;">
+                    <i class='bx bx-slideshow'></i>
+                    <h2>Presentations</h2>
+                </div>
+                <div class="presentation_img">
+
+                    <img src="images/Cloud_computing.png" alt="Cloud_computing" width="250" height="180">
+                    <img src="images/Rarp_Rip_prot.png" alt="Rarp_Rip_prot" width="250" height="180">
+                    <img src="images/XML.png" alt="XML" width="250" height="180">
+                    <img src="images/Hacking-Techniques.png" alt="Hacking-Techniques" width="250" height="180">
+                    <img src="images/Model_of_Deadlock.png" alt="Model_of_Deadlock" width="250" height="180">
+                    <img src="images/loading.gif" alt="loading.." width="250" height="180">
+                </div>
+            </section>
+            
         </article>
         <article class="contact_section" id="contact">
             <header>
@@ -429,7 +488,7 @@
                 <div class="form">
                 <form action="https://formsubmit.co/e1215024govardancse@gmail.com" method="post" id="form_inputs">
                     <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    <input type="email" name="mail" id="email" placeholder="Email Id" required>
+                    <input type="email" name="mail" id="email" placeholder="Email Id" oninput="adjustFontSize()" required>
                     <div class="text-area">
                         <textarea name="message" id="message" cols="30" rows="4"
                             placeholder="Your Message"></textarea>
@@ -438,12 +497,12 @@
                     <input type="hidden" name="_template" value="box">
                     <input type="hidden" name="_subject" value="New Product Infomation!">
                     <button type="submit" class="submit"><i class='bx bxl-telegram' ></i>Send Message</button onclick="openpopup()">
-                    <input type="hidden" name="_next" value="#">
+                    <input type="hidden" name="_next" value="https://formsubmit.co/green-tick.gif">
                 </form>
             </div>
             <div class="popup" id="popup">
                 <img src="images/green-tick.gif" alt="Green-Tick">
-                <h3>Thankque</h3>
+                <h3>Thank You</h3>
                 <p>Your Details Hass been Submitted Successfully, Thanks !</p>
                 <a href="#contact"><button type="button" onclick="closePopup()">OK</button>
                </div></a>

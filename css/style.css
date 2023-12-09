@@ -233,7 +233,7 @@ a {
     top: 0;
     right: 0;
     display: flex;
-    width: 40%;
+    width: 50%;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
@@ -639,7 +639,7 @@ header {
     animation-delay: 7s;
 }
 
-
+/* 
 .certificate-images {
     margin: 20px 0px;
     width: 100%;
@@ -655,11 +655,12 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     width: 80%;
     gap: 10px;
 
-}
-
+} */
+/* 
 
 .certificate-images ul>li {
     flex-basis: 210px;
@@ -699,15 +700,15 @@ header {
 
 .eye-icon:hover {
     color: #ffbb5c;
-}
+} */
 
 /* .certificate-images ul li:hover .eye-icon {
     display: block;
 } */
-.certificate-images ul li:hover .eye-icon {
+/* .certificate-images img:hovern {
     display: block;
     color: #ffbb5c;
-}
+} */
 
 /* .popup {
         display: none;
@@ -815,6 +816,62 @@ header {
 .project_filter ul li:active {
     border-color: #ffbb5c;
 }
+
+.project_filter ul li button{
+    background-color: transparent;
+    border: none;
+    color: #ffbb5c;
+    cursor: pointer;
+}
+.project-title {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 10px;
+    color: #ffbb5c;
+    font-family: 'Gabarito', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Varela Round', sans-serif;
+    margin: 10px 40px;
+    animation: revealFromLeft 0.5s 0s ease both 1;
+
+}
+.projects{
+    margin-top: 20px;
+}
+
+.project-title i {
+    background-color: #2b2b2c;
+    padding: 0.5rem;
+    color: #ffbb5c;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+
+}
+.project_img, .presentation_img, .certificate_images{
+    margin: 40px 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project_img img, .presentation_img img, .certificate_images img{
+    border: 1px solid #6f6f6f;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    transition: opacity 0.5s;
+    margin-bottom: 40px;
+}
+.certificate_images{
+    animation: revealFromLeft 0.8s 9.5s ease both 1;
+
+}
+
+.project_img img:hover, .presentation_img img:hover, .certificate_images img:hover{
+    opacity: 0.4;
+}
+
+
 
 
 .location {
@@ -1049,6 +1106,120 @@ textarea {
     }
 }
 
+@media screen and (max-width: 1200px) {
+
+
+    .nav-list{
+        gap: 7px;
+        flex-wrap: nowrap;
+        width: 60%;
+    }
+
+    .profile-card{
+        min-height: 10vh;
+        position: fixed;
+        overflow: hidden;
+        width: 15vw;
+        min-width: 210px;
+        margin-left: 3%;
+        
+    }
+
+    .profile-card img{
+        display: flex;
+        
+    }
+
+    .h-line{
+        width: 70%;
+    }
+
+ 
+
+    .profile-details h1 {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    
+    h2#role {
+    
+        font-size: 1rem;
+        
+    }
+    .icon-box i{
+        font-size: 1rem;
+        
+    }
+
+    .contact-list li{
+        gap: 10px;
+        margin-left: 5px;
+    }
+    .main-content{
+        min-height: 5vh;
+        box-shadow: none;
+
+    }
+    .title-wrapper h5{
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    .title-wrapper data{
+        font-size: 1rem;
+    }
+
+    .language{
+        width: 80%;
+    }
+
+    .nav-list button{
+        font-size: 1rem;
+    }
+
+    /* header{
+        font-size: 1.1rem;
+    } */
+/* 
+    .about-content {
+        font-size: 1.2rem;
+    } */
+/* 
+    .Current-pursuits h2{
+        font-size: 1.2rem;
+    } */
+    .title{
+        gap: 10px;
+
+    }
+    .title h3{
+        font-size: 1rem;
+        white-space: no-wrap;
+    }
+
+    .title img{
+        width: 30px;
+        height: 30px;
+    }
+
+    
+.Current-pursuits p {
+   
+    font-size: 0.8rem;
+}
+
+.skills-list{
+    margin-left: 70px;
+}
+
+input{
+    margin-right: 40px;
+}
+
+.location iframe{
+    height: 50vh;
+}
+    
+}
 
 /* Media queries for responsiveness */
 @media only screen and (max-width: 768px) {
