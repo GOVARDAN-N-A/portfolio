@@ -17,14 +17,15 @@
 </head>
 
 <body>
-    <aside class="profile-card">
+    <aside class="profile-card" id="profile-card">
         <img src="images/my-avatar.png" alt="" width="150" height="150" loading="lazy">
+        <button class="show_contact" id="show_contact" onclick="showContacts()"><i class='bx bxs-chevron-down'></i></button>
         <div class="profile-details">
             <h1>GOVARDAN N A</h1>
             <h2 id="role">Web Developer</h2>
             <div class="h-line">
             </div>
-            <ul class="contact-list">
+            <ul class="contact-list" id="contact-list">
                 <li>
                     <div class="icon-box">
                         <a href="https://api.whatsapp.com/send?phone=919003980804" target="_blank"><i
@@ -42,7 +43,7 @@
                     </div>
                 </li>
             </ul>
-            <section class="language">
+            <section class="language" id="language">
 
 
                 <ul class="language-list content-card">
@@ -90,7 +91,7 @@
             </section>
         </div>
     </aside>
-    <div class="main-content">
+    <div class="main-content" id="main-content">
         <nav class="navbar">
             <ul class="nav-list">
                 <li class="nav-item">
@@ -426,14 +427,14 @@
                 <i class='bx bx-expand-horizontal'></i>
                 <h2>Project</h2>
             </div>
-                <div class="project_filter">
+                <!-- <div class="project_filter">
                     <ul>
                         <li><button>All</button></li>
                         <li><button>Python</button></li>
                         <li><button>Web Development</button></li>
                         <li><button>Ms Office</button></li>
                     </ul>
-                </div>
+                </div> -->
                 <div class="project_container">
                     <div class="project_item">
                         <div class="project_img">
