@@ -10,27 +10,21 @@ document.addEventListener('DOMContentLoaded',function(event){
         }, 100);
       }
       else if (typeof fnCallback == 'function') {
-        // call callback after timeout
         setTimeout(fnCallback, 5000);
       }
     }
-    // start a typewriter animation for a text in the dataText array
      function StartTextAnimation(i) {
        if (typeof dataText[i] == 'undefined'){
           setTimeout(function() {
             StartTextAnimation(0);
           }, 5000);
        }
-       // check if dataText[i] exists
       if (i < dataText[i].length) {
-        // text exists! start typewriter animation
        typeWriter(dataText[i], 0, function(){
-         // after callback (and whole text has been animated), start next text
          StartTextAnimation(i + 1);
        });
       }
     }
-    // start the text animation
     StartTextAnimation(0);
   });
 
@@ -41,7 +35,7 @@ document.addEventListener('DOMContentLoaded',function(event){
     let contactList = document.getElementById("contact-list");
     let languageSection = document.getElementById("language");
 
-    if (window.innerWidth <= 920) {
+    if (window.innerWidth >= 520 && window.innerWidth <= 920) {
         if (contactList.style.display === "block") {
             showContact.innerHTML = "<i class='bx bxs-chevron-down'></i>";
             contactList.style.display = "none";
@@ -57,6 +51,23 @@ document.addEventListener('DOMContentLoaded',function(event){
             profileCard.style.minHeight = "80vh";
             mainContent.style.top = "90vh";
         }
+    }
+    else if(window.innerWidth <= 520){
+      if (contactList.style.display === "block") {
+        showContact.innerHTML = "<i class='bx bxs-chevron-down'></i>";
+        contactList.style.display = "none";
+        languageSection.style.display = "none";
+        profileCard.style.minHeight = "20vh";
+        mainContent.style.top = "40vh";
+    }
+   
+    else {
+        showContact.innerHTML = "<i class='bx bxs-chevron-up'></i>";
+        contactList.style.display = "block";
+        languageSection.style.display = "block";
+        profileCard.style.minHeight = "80vh";
+        mainContent.style.top = "90vh";
+    }
     }
     else{
       profileCard.style.minHeight = "initial";
