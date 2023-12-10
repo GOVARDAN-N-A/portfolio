@@ -34,6 +34,36 @@ document.addEventListener('DOMContentLoaded',function(event){
     StartTextAnimation(0);
   });
 
+  function showContacts() {
+    let showContact = document.getElementById('show_contact');
+    let mainContent = document.getElementById('main-content');
+    let profileCard = document.getElementById('profile-card');
+    let contactList = document.getElementById("contact-list");
+    let languageSection = document.getElementById("language");
+
+    if (window.innerWidth <= 920) {
+        if (contactList.style.display === "block") {
+            showContact.innerHTML = "<i class='bx bxs-chevron-down'></i>";
+            contactList.style.display = "none";
+            languageSection.style.display = "none";
+            profileCard.style.minHeight = "35vh";
+            mainContent.style.top = "40vh";
+        }
+       
+        else {
+            showContact.innerHTML = "<i class='bx bxs-chevron-up'></i>";
+            contactList.style.display = "block";
+            languageSection.style.display = "block";
+            profileCard.style.minHeight = "80vh";
+            mainContent.style.top = "90vh";
+        }
+    }
+    else{
+      profileCard.style.minHeight = "initial";
+      mainContent.style.top = "initial";
+    }
+}
+
   function show_content(param) {
 
     const sections = ["about", "resume", "portfolio", "contact"];
